@@ -1,1 +1,1 @@
-## An implementation of the game Hangman written in Python
+### An Python program for the game Hangman
