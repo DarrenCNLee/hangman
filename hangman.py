@@ -18,7 +18,6 @@ def main():
         
     wordsFile.close()
     
-    
     solutionWord = words[random.randint(0, len(words) - 1)].rstrip()
     solution = list(solutionWord)
     solLetters = set(solution)
@@ -34,7 +33,7 @@ def main():
         print(solution)
     
     while wrongGuessesLeft > 0 and guessed != solution:    
-        letter = input("Guess a letter: ")
+        letter = input("Guess a letter: ").lower()
         
         if len(letter) != 1 or letter not in alphabet:
             print("Please enter one letter.\n")
