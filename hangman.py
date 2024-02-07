@@ -56,6 +56,11 @@ def main():
             print("\"" + letter + "\" was not in the word.")
             print("Wrong guesses so far:", wrongLetters)
             print("Wrong guesses left: " + str(wrongGuessesLeft))
+            
+            for i in range(len(guessed)):
+                print(guessed[i] + " ", end = "")
+            
+            print()
         
         print("\n")
             
