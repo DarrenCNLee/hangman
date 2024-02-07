@@ -61,6 +61,38 @@ def main():
                 print(guessed[i] + " ", end = "")
             
             print()
+            
+            match wrongGuessesLeft:
+                case 5:
+                    print("_____")
+                    print("|   |")
+                    print("|   O")
+                    print("|")
+                    print("|")
+                case 4:
+                    print("_____")
+                    print("|   |")
+                    print("|   O")
+                    print("|   |")
+                    print("|")
+                case 3:
+                    print("_____")
+                    print("|   |")
+                    print("|   O")
+                    print("|  /|")
+                    print("|")
+                case 2:
+                    print("_____")
+                    print("|   |")
+                    print("|   O")
+                    print("|  /|\\")
+                    print("|")
+                case 1:
+                    print("_____")
+                    print("|   |")
+                    print("|   O")
+                    print("|  /|\\")
+                    print("|  /")
         
         print("\n")
             
@@ -69,6 +101,11 @@ def main():
         print("Congratulations, you guessed the word correctly!")
     else:
         print("Sorry, you took too many turns.")
+        print("_____")
+        print("|   |")
+        print("|   O")
+        print("|  /|\\")
+        print("|  / \\")
         print("The word was: " + solutionWord)
             
 if __name__ == "__main__":
