@@ -69,30 +69,40 @@ def main():
                     print("|   O")
                     print("|")
                     print("|")
+                    print("|_")
+                
                 case 4:
                     print("_____")
                     print("|   |")
                     print("|   O")
                     print("|   |")
                     print("|")
+                    print("|_")
+                
                 case 3:
                     print("_____")
                     print("|   |")
                     print("|   O")
                     print("|  /|")
                     print("|")
+                    print("|_")
+                
                 case 2:
                     print("_____")
                     print("|   |")
                     print("|   O")
                     print("|  /|\\")
                     print("|")
+                    print("|_")
+                    
                 case 1:
                     print("_____")
                     print("|   |")
                     print("|   O")
                     print("|  /|\\")
                     print("|  /")
+                    print("|_")
+                    
         
         print("\n")
             
@@ -106,6 +116,7 @@ def main():
         print("|   O")
         print("|  /|\\")
         print("|  / \\")
+        print("|_")
         print("The word was: " + solutionWord)
             
 if __name__ == "__main__":
