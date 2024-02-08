@@ -18,12 +18,12 @@ def main():
         
     wordsFile.close()
     
-    solutionWord = words[random.randint(0, len(words) - 1)].rstrip()
+    solutionWord = words[random.randint(0, len(words) - 1)].rstrip().lower()
     solution = list(solutionWord)
     solLetters = set(solution)
     
     wrongLetters = set()
-    wrongGuessesLeft = 6
+    wrongGuessesLeft = 7
     
     guessed = ["_" for _ in range(len(solution))]
     
@@ -63,6 +63,13 @@ def main():
             print()
             
             match wrongGuessesLeft:
+                case 6:
+                    print("_____")
+                    print("|   |")
+                    print("|")
+                    print("|")
+                    print("|")
+                    print("|_")
                 case 5:
                     print("_____")
                     print("|   |")
