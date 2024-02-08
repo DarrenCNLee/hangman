@@ -2,10 +2,10 @@
 
 import random
 
-words = []
 debug = False
 
 def main():
+    words = []
     wordsFile = open("words.txt", "r")
     
     while True:
